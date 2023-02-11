@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Html</title>
+    <style>
+        .text_shadow {
+            width: 200px;
+            height: 100px;
+            text-shadow: 2px 2px 2px blue;
+            transition: transform 2s;
+        }
+
+
+        .text_shadow:hover {
+            transform: rotate(360deg);
+        }
+
+        #word_wrap {
+            word-wrap: break-word;
+            width: 150px;
+            border: 1px solid #ff0000;
+        }
+
+        #no_wrap {
+            width: 150px;
+            border: 1px solid #ff0000;
+        }
+
+        .mybgg_css {
+            width: 300px;
+            height: 300px;
+            background-image: url('./Images/love.jpeg');
+            background-repeat: no-repeat;
+            background-size: 50% 50%;
+            box-shadow: 4px 4px 5px 4px grey;
+        }
+
+        .from-control {
+            border: 1px solid black;
+            padding: 20px;
+            width: 200px;
+            resize: vertical;
+            overflow: scroll;
+        }
+
+        .p-control {
+            width: 300px;
+            height: 100px;
+            background-color: aqua;
+            box-sizing: border-box;
+            padding-left: 60px;
+            margin: 4px 4px 5px 8px;
+        }
+
+        #gt-5 {
+            color: blue;
+            transform: translateY(50px);
+        }
+
+        .skew_method {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        #myDiv {
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            transform: skewX(20deg);
+        }
+    </style>
+</head>
+
+<body>
+    <br><br>
+    <div> Below is example of Word-wrap</div>
+    <br><br>
+    <div id="word_wrap"> you can't break the line
+        hereeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+    </div>
+
+    <p>Without using word-wrap text will go like this.</p>
+
+    <div id="no_wrap">you can't break the line
+        hereeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+    </div>
+
+    <br><br>
+    <div class="mybgg_css">
+
+    </div>
+
+    <br><br>
+    <div class="from-group">
+        <label> TextArea:</label><br>
+        <textarea class="from-control"></textarea>
+    </div>
+    <br><br>
+    <div class="p-control">
+        <p id="gt-5">Box Sizing is Important.</p>
+    </div>
+    <br><br><br><br>
+    <h1>
+        <div class="text_shadow"> Text Shadow </div>
+    </h1>
+
+    <h2>The skewX() Method</h2>
+
+    <p>The skewX() method skews an element along the X-axis by the given angle.</p>
+
+    <div class="skew_method">
+        This a normal div element.
+    </div>
+    <br>
+    <div id="myDiv">
+        This div element is skewed 20 degrees along the X-axis.
+    </div>
+</body>
+
+</html>
